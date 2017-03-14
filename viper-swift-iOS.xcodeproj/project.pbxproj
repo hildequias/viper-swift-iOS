@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCAB1A071E78816900BCCB37 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAB1A061E78816900BCCB37 /* RootWireframe.swift */; };
+		CCAB1A091E78841200BCCB37 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAB1A081E78841200BCCB37 /* AppDependencies.swift */; };
 		CCF643B31E787BCB007233EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF643B21E787BCB007233EE /* AppDelegate.swift */; };
 		CCF643B51E787BCB007233EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF643B41E787BCB007233EE /* ViewController.swift */; };
 		CCF643B81E787BCB007233EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCF643B61E787BCB007233EE /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CCAB1A061E78816900BCCB37 /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootWireframe.swift; path = Common/View/RootWireframe.swift; sourceTree = "<group>"; };
+		CCAB1A081E78841200BCCB37 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		CCF643AF1E787BCB007233EE /* viper-swift-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viper-swift-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCF643B21E787BCB007233EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCF643B41E787BCB007233EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCAB1A031E787F4700BCCB37 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CCAB1A051E78812000BCCB37 /* View */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		CCAB1A041E787F5400BCCB37 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		CCAB1A051E78812000BCCB37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCAB1A061E78816900BCCB37 /* RootWireframe.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		CCF643A61E787BCB007233EE = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +81,15 @@
 		CCF643B11E787BCB007233EE /* viper-swift-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				CCAB1A041E787F5400BCCB37 /* Modules */,
+				CCAB1A031E787F4700BCCB37 /* Common */,
 				CCF643B21E787BCB007233EE /* AppDelegate.swift */,
 				CCF643B41E787BCB007233EE /* ViewController.swift */,
 				CCF643B61E787BCB007233EE /* Main.storyboard */,
 				CCF643B91E787BCB007233EE /* Assets.xcassets */,
 				CCF643BB1E787BCB007233EE /* LaunchScreen.storyboard */,
 				CCF643BE1E787BCB007233EE /* Info.plist */,
+				CCAB1A081E78841200BCCB37 /* AppDependencies.swift */,
 			);
 			path = "viper-swift-iOS";
 			sourceTree = "<group>";
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCAB1A091E78841200BCCB37 /* AppDependencies.swift in Sources */,
 				CCF643B51E787BCB007233EE /* ViewController.swift in Sources */,
 				CCF643B31E787BCB007233EE /* AppDelegate.swift in Sources */,
+				CCAB1A071E78816900BCCB37 /* RootWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +334,7 @@
 				CCF643C31E787BCB007233EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
